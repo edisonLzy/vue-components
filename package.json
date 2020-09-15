@@ -1,0 +1,58 @@
+{
+  "name": "vue-component-dev",
+  "version": "1.0.0",
+  "description": " vue-component组件开发模版",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.6.5",
+    "css-loader": "^4.3.0",
+    "cz-conventional-changelog": "^3.2.0",
+    "cz-customizable": "^6.3.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "postcss-loader": "^4.0.1",
+    "regenerator-runtime": "^0.13.7",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.10.2",
+    "webpack-merge": "^4.2.2"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --colors --config ./build/webpack.dev.js",
+    "build": "webpack --colors --config ./build/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edisonLzy/vue-components.git"
+  },
+  "keywords": [
+    "vue",
+    "component"
+  ],
+  "author": "evanzyli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edisonLzy/vue-components/issues"
+  },
+  "homepage": "https://github.com/edisonLzy/vue-components#readme",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./cz.config.js"
+    }
+  },
+  "dependencies": {
+    "countup.js": "^2.0.7"
+  }
+}
